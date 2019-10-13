@@ -74,6 +74,7 @@
             android:text="@string/btn_register"/>
 
         <TextView
+            android:id="@+id/tvGoToLogin"
             android:textColor="@color/white"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"

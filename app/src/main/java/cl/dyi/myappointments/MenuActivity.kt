@@ -1,8 +1,10 @@
 package cl.dyi.myappointments
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import cl.dyi.myappointments.PreferenceHelper.set
 import kotlinx.android.synthetic.main.activity_menu.*
 
 class MenuActivity : AppCompatActivity() {
@@ -21,6 +23,26 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnLogOut.setOnClickListener{
+            clearSessionPreferences()
+            val intent = Intent( this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
+
+
+    }
+
+    private fun clearSessionPreferences(){
+        // PreferenceManager.getDefaultSharedPreferences()   // cl.dyi.myappointments
+        /*
+        val preferences = getSharedPreferences("general", Context.MODE_PRIVATE)
+        val editor = preferences.edit()
+        editor.putBoolean("session", false)
+        editor.apply()
+        */
+        val preferences = PreferenceHelper.defaultPrefs(this)
+        preferences["session"] = false
     }
 }

@@ -4,14 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
     tools:context=".AppointmentsActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewTasks"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:paddingBottom="80dp"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/label_my_appointments" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAppointments"
+        tools:listitem="@layout/item_appointment"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
