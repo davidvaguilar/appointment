@@ -8,21 +8,28 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import cl.dyi.myappointments.PreferenceHelper.get
 import cl.dyi.myappointments.PreferenceHelper.set
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
     val session = true
+    private val snackBar by lazy {
+        Snackbar.make(mainLayout, R.string.press_back_again, Snackbar.LENGTH_SHORT)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
+
         //share preference
         //sqlite
         //files
-       /* val preferences = getSharedPreferences("general", Context.MODE_PRIVATE )
-        val session = preferences.getBoolean("session", false)
-        */
+        /* val preferences = getSharedPreferences("general", Context.MODE_PRIVATE )
+         val session = preferences.getBoolean("session", false)
+         */
 
         val preferences = PreferenceHelper.defaultPrefs(this)
 
@@ -59,4 +66,14 @@ class MainActivity : AppCompatActivity() {
         val preferences = PreferenceHelper.defaultPrefs(this)
         preferences["session"] = true
     }
+
+    override fun onBackPressed() {
+        if( snackBar.isShown ){
+            super.onBackPressed()
+        } else {
+            snackBar.show()
+        }
+
+    }
+
 }
