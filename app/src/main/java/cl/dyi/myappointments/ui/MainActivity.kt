@@ -1,13 +1,14 @@
-package cl.dyi.myappointments
+package cl.dyi.myappointments.ui
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import cl.dyi.myappointments.PreferenceHelper
 import kotlinx.android.synthetic.main.activity_main.*
 import cl.dyi.myappointments.PreferenceHelper.get
 import cl.dyi.myappointments.PreferenceHelper.set
+import cl.dyi.myappointments.R
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {

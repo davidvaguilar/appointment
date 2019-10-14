@@ -32,4 +32,16 @@
     <string name="item_appointment_time">"A las %1$s"</string>
     <string name="label_my_appointments">Mis citas médicas</string>
     <string name="press_back_again">Presione una vez mas para salir</string>
+
+    <string name="dialog_create_appointment_exit_title">¿Estas seguro que deseas salir?</string>
+    <string name="dialog_create_appointment_exit_message">Si abandonas el registro, los datos que habias ingresado se perderán</string>
+    <string name="dialog_create_appointment_exit_positive_btn">Si, salir</string>
+    <string name="dialog_create_appointment_exit_negative_btn">Continuar registro</string>
+    <string name="validate_appointment_description">La descripcion es demasiado corta</string>
+    <string name="label_scheduled_time">Hola de la cita</string>
+    <string name="label_confirm_appointment_data">Datos de la cita</string>
+    <string name="validate_appointment_date">Es necesario seleccionar una fecha</string>
+    <string name="validate_appointment_time">Es necesario definir una hora para la cita</string>
+    <string name="error_loading_specialties">Ocurrió un problema al cargar las especialidades</string>
+
 </resources>

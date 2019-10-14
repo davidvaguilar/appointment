@@ -1,10 +1,11 @@
-package cl.dyi.myappointments
+package cl.dyi.myappointments.ui
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import cl.dyi.myappointments.PreferenceHelper
 import cl.dyi.myappointments.PreferenceHelper.set
+import cl.dyi.myappointments.R
 import kotlinx.android.synthetic.main.activity_menu.*
 
 class MenuActivity : AppCompatActivity() {

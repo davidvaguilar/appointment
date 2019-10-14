@@ -1,8 +1,9 @@
-package cl.dyi.myappointments
+package cl.dyi.myappointments.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import cl.dyi.myappointments.R
 import cl.dyi.myappointments.model.Appointment
 import kotlinx.android.synthetic.main.activity_appointments.*
 
