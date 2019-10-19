@@ -24,9 +24,7 @@
         android:text="@string/label_create_appointment" />
 
     <include layout="@layout/card_view_step_one" />
-
     <include layout="@layout/card_view_step_two" />
-
     <include layout="@layout/card_view_step_three" />
 
 </LinearLayout>
